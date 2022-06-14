@@ -1,4 +1,13 @@
+<!DOCTYPE html>
 <h1>Edingbooks</h1>
-<p>title</p>
 
+<%= form_with model: @book do |t| %>
+
+<p>title</p>
+<%= t.text_field:title %>
 <p>body</p>
+<%= t.text_area:body %>
+
+<%= t.submit 'Update Book' %>
+<% end %>
+<div><a href= >Show</a> |<a href='/books'>Back</a></div>
