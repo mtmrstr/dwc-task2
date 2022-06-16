@@ -7,4 +7,4 @@
 
 <p>body：<%= @book.body %></p>
 
-<div><a><%=link_to 'Edit' , edit_book_path(@book.id) %></a> |<a href='/books'>Back</a></div>
+<%=link_to 'Edit' , edit_book_path(@book.id) %> |<a href='/books'>Back</a>
